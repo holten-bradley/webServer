@@ -1,15 +1,11 @@
 RUNNING THE WEB SERVER
 ============================================================
-Extract "testing.tar" and use it as your webserver root
-directory. Run your webserver using the following command
-
-./web_server <port> <path_to_testing>/testing <num_dispatcher> <num_workers> <dynamic_flag> <cache_flag> <queue_length> <cache_size>
 
 **** Pick a random number other than 9000 from (1024 to 65536) to avoid collisions with other groups ****
 For example, to run the web server at port 9000, with root directory "./testing" with 5 dispatch and worker threads, with dynamic and cache turned on
 a queue length 50 and cache length of 50 run the following command
 
-./web_server 9000 ./testing 5 5 1 1 50 50
+./web_server 9000 ./testing 5 5 50 50
 
 You should now (using another terminal) be able to query a single file, such as the following:
 
